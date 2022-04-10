@@ -1,0 +1,44 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bitter');
+@import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,300&display=swap');
+
+
+
+// Variables
+@import 'mixinsAndVariables/variables';
+
+
+// Mixins
+@import 'mixinsAndVariables/mixin';
+
+
+body{
+
+    //MIXIN 
+    @include bodyMain;
+
+    // REGISTRATION SCSS CONTAINER
+    @import 'auth/registration';
+
+    // HOME SCSS CONTAINER
+    @import 'content/home';
+
+    //MAIN SLIDER SCSS CONTAINER
+    @import 'sliders/mainSlider';
+
+    //MAIN NAVIGATION SCSS CONTAINER
+    @import 'navigation/mainNavigation';
+
+    //MAIN CONTAINER SCSS CONTAINER
+    @import 'content/mainContainer';
+
+
+    margin-bottom: 200px;
+}
+
+

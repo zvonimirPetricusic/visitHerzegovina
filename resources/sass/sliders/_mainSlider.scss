@@ -1,0 +1,39 @@
+#slider, .wrap, .slide-content{
+    // POSITIONING
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.wrap{
+    // POSITIONING
+    position: relative;
+    .slide{
+        // POSITIONING
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        .slide-content{
+            // POSITIONING
+            display: flex;
+            flex-direction: column;
+            width: 700px;
+            span{
+                // TYPOGRAPHY
+                font-size: 5rem;
+                font-family: $spinnaker;
+
+                // DESIGN
+                color: $white;
+                
+                // POSITIONING
+                margin-top: 360px;
+                margin-left: 150px;
+                
+            }
+        }
+    }
+    // MIXIN
+    @include backgroundImages;
+}

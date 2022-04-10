@@ -1,0 +1,40 @@
+.home{
+    // POSITIONING
+    display: grid;
+    grid-template-columns: 450px 500px;
+    grid-gap: 350px;
+    margin-top: 200px;
+    position: fixed;
+    z-index: 1;
+    margin-left: calc(50% - 600px);
+    
+    //LOGIN SCSS CONTAINER
+    @import '../auth/login';
+
+    .gridItemRegister{
+        // POSITIONING
+        width: 450px;
+        .homeText{
+            // DESIGN
+            color: $white;
+
+            // TYPOGRAPHY
+            font-size: 50px;
+            font-family: $sen;
+            text-align: center;
+        }
+        .homeRegisterBtn{
+            button{
+                // DESIGN
+                background: $darkOrange;
+
+                // POSITIONING
+                margin-left: 150px;
+
+                // MIXIN
+                @include loginRegisterButtons;
+            }
+            
+        }
+    }
+}

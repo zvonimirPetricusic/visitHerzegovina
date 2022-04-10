@@ -1,0 +1,479 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bitter");
+@import url("https://fonts.googleapis.com/css2?family=Spinnaker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,300&display=swap");
+body {
+  background: #FEF8EC;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  margin-bottom: 200px;
+}
+
+body .signUpContainer {
+  width: 400px;
+  height: auto;
+  margin-top: 100px;
+  position: fixed;
+  margin-left: calc(50% - 200px);
+  z-index: 1;
+  background: #d8d7d7;
+  border-radius: 10px;
+  text-align: center;
+}
+
+body .signUpContainer .termsAndPolicy {
+  color: #333333;
+  width: 268.01px;
+  margin-left: calc(50% - 134px);
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Varela Round";
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+body .signUpContainer .registerTitle {
+  width: 100%;
+  height: 50px;
+  padding-top: 25px;
+  background-color: #333333;
+  color: #ffffff;
+  font-family: "Spinnaker";
+  font-size: 24px;
+}
+
+body .signUpContainer form {
+  display: -ms-grid;
+  display: grid;
+  margin-left: calc(50% - 100px);
+}
+
+body .signUpContainer form span {
+  margin-left: -90px;
+  color: #f44336;
+  font-family: "Varela Round";
+  font-size: 12px;
+}
+
+body .signUpContainer form #registerBtn {
+  margin-left: calc(50% - 125px);
+  margin-bottom: 30px;
+  background: #2d9730;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  font-family: "Sen";
+  width: 150px;
+  height: 40px;
+  margin-top: 40px;
+}
+
+body .signUpContainer form .input {
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+body .home {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 450px 500px;
+      grid-template-columns: 450px 500px;
+  grid-gap: 350px;
+  margin-top: 200px;
+  position: fixed;
+  z-index: 1;
+  margin-left: calc(50% - 600px);
+}
+
+body .home .gridItemLoginPlaceholder {
+  background: #ffffff;
+  border-radius: 20px;
+  opacity: 0.4;
+  width: 400px;
+  height: 450px;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+}
+
+body .home .gridItem {
+  background: inherit;
+  z-index: 1;
+  width: 400px;
+  height: 450px;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+}
+
+body .home .gridItem form {
+  display: -ms-grid;
+  display: grid;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+
+body .home .gridItem form .input {
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+body .home .gridItem form button {
+  background: #2d9730;
+  margin-left: calc(50% - 125px);
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  font-family: "Sen";
+  width: 150px;
+  height: 40px;
+  margin-top: 40px;
+}
+
+body .home .gridItem .termsAndPolicy {
+  color: #ffffff;
+  width: 268.01px;
+  margin-left: calc(50% - 134px);
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Varela Round";
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+body .home .gridItem .loginTitle {
+  color: #333333;
+  font-family: "Spinnaker";
+  font-size: 30px;
+  margin-top: 30px;
+  margin-left: calc(50% - 134px);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+body .home .gridItem .forgotPassword {
+  font-family: "Varela Round";
+  font-size: 12px;
+  color: #ffffff;
+  cursor: pointer;
+  opacity: 0.8;
+  margin-left: calc(50% - 50.75px);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+body .home .gridItemRegister {
+  width: 450px;
+}
+
+body .home .gridItemRegister .homeText {
+  color: #ffffff;
+  font-size: 50px;
+  font-family: "Sen";
+  text-align: center;
+}
+
+body .home .gridItemRegister .homeRegisterBtn button {
+  background: #f64c72;
+  margin-left: 150px;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  font-family: "Sen";
+  width: 150px;
+  height: 40px;
+  margin-top: 40px;
+}
+
+body #slider, body .wrap, body .slide-content {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+body .wrap {
+  position: relative;
+}
+
+body .wrap .slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body .wrap .slide .slide-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 700px;
+}
+
+body .wrap .slide .slide-content span {
+  font-size: 5rem;
+  font-family: "Spinnaker";
+  color: #ffffff;
+  margin-top: 360px;
+  margin-left: 150px;
+}
+
+body .wrap .slide1 {
+  background-image: url("img/1.jpg");
+}
+
+body .wrap .slide2 {
+  background-image: url("img/2.jpg");
+}
+
+body .wrap .slide3 {
+  background-image: url("img/3.jpg");
+}
+
+body .wrap .slide4 {
+  background-image: url("img/4.jpg");
+}
+
+body .wrap .slide5 {
+  background-image: url("img/5.png");
+}
+
+body .wrap .slide6 {
+  background-image: url("img/6.jpg");
+}
+
+body .wrap .slide7 {
+  background-image: url("img/7.jpg");
+}
+
+body .navbarPlaceholder {
+  background: #333333;
+  opacity: 0.8;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+body .navbarPlaceholderSmall {
+  background: #333333;
+  opacity: 0.8;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+}
+
+body .navbar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 4;
+}
+
+body .navbar .navbarLogo {
+  margin-top: 2.5px;
+  padding-left: 150px;
+  text-align: left;
+}
+
+body .navbar .navbarLogo a {
+  text-decoration: none;
+}
+
+body .navbar .navbarLogo span {
+  font-size: 40px;
+  text-decoration: none;
+  font-family: "Covered By Your Grace";
+  color: #ffffff;
+  cursor: pointer;
+  padding-right: 30px;
+}
+
+body .navbar .navbarLinks {
+  padding-top: calc(35px/2);
+  padding-right: 120px;
+  text-align: right;
+}
+
+body .navbar .navbarLinks a {
+  font-size: 14px;
+  text-decoration: none;
+  font-family: "Spinnaker";
+  color: #ffffff;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  padding-right: 30px;
+}
+
+body .navbar .navbarLinks a:hover {
+  color: #f64c72;
+}
+
+body .mainContainer {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  -ms-grid-columns: 487.68px 731.51px;
+      grid-template-columns: 487.68px 731.51px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 100px;
+}
+
+body .mainContainer .mainContainerPost {
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: none;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+body .mainContainer .mainContainerPost .intro {
+  font-family: 'Spinnaker';
+  font-size: 16px;
+}
+
+body .mainContainer .mainContainerPost .intro a {
+  color: #565656;
+}
+
+body .mainContainer .mainContainerPost .title {
+  margin-top: 20px;
+  font-family: 'Varela Round';
+  font-size: 50px;
+}
+
+body .mainContainer .mainContainerPost .paragraph {
+  margin-top: 20px;
+  font-family: 'Varela Round';
+  font-size: 26px;
+  color: #565656;
+}
+
+body .mainContainer .mainContainerPost .learnMore {
+  padding-top: 20px;
+  font-family: 'Spinnaker';
+  font-size: 16px;
+  color: #565656;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+}
+
+body .mainContainer .mainContainerPost .learnMore:hover {
+  font-size: 18px;
+  color: #f64c72;
+}
+
+body .mainContainer .mainContainerPost:hover {
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+body .mainContainer .mainContainerImage img {
+  height: 400px;
+  width: 100%;
+  z-index: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+body .mainContainer .mainContainerImage img:hover {
+  opacity: 0.8;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+body .mainContainer .mainContainerImage #learnMorePopUpOne {
+  background-color: #f64c72;
+}
+
+body .mainContainer .mainContainerImage #learnMorePopUpTwo {
+  background-color: #E6AF2E;
+}
+
+body .mainContainer .mainContainerImage #learnMorePopUpThree {
+  background-color: #584CBD;
+}
+
+body .mainContainer .mainContainerImage .learnMorePopUp {
+  position: absolute;
+  width: 731.5px;
+  height: 400px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  z-index: 1;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+body .mainContainer .mainContainerImage .learnMorePopUp .learnMorePopUpText {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 20px;
+  font-family: 'Varela Round';
+  font-size: 16px;
+  text-align: justify;
+  color: #ffffff;
+}
+
+body .mainContainer .mainContainerImage .learnMorePopUp .learnMorePopUpImages {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+}
+
+body .mainContainer .mainContainerImage .learnMorePopUp .learnMorePopUpImages .learnMorePopUpImage {
+  padding-left: 20px;
+}
+
+body .mainContainer .mainContainerImage .learnMorePopUp .learnMorePopUpImages .learnMorePopUpImage .image {
+  width: 200px;
+  height: 120px;
+  opacity: 1;
+}
+
+body .mainContainer .mainContainerImage .learnMorePopUp .learnMorePopUpImages .learnMorePopUpImage .image:hover {
+  width: 210px;
+  height: 130px;
+}
+/*# sourceMappingURL=app.css.map */

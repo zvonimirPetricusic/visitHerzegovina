@@ -1,0 +1,76 @@
+.gridItemLoginPlaceholder{
+    // DESIGN
+    background: $white;
+    border-radius: 20px;
+    opacity: 0.4;
+
+    // MIXIN
+    @include loginBackground;
+}
+
+.gridItem{
+    // DESIGN
+    background: inherit;
+
+    // POSITIONING
+    z-index: 1;
+
+    // MIXIN
+    @include loginBackground;
+    form{
+        // POSITIONING
+        display: grid;
+        margin-left: 100px;
+        margin-top: 10px;
+       .input{
+        // MIXIN
+        @include input;
+       }
+       button{
+           // DESIGN
+            background: $darkGreen;
+
+            // POSITIONING
+            margin-left: $loginRegisterButtonMarginLeft;
+
+            // MIXIN
+            @include loginRegisterButtons;
+       }
+       
+    }
+    .termsAndPolicy{
+        // DESIGN
+        color: $white;
+        
+        // MIXIN
+        @include termsAndPolicy;
+    }
+    .loginTitle{
+        
+        color: $darkCharcoal;
+        
+        // TYPOGRAPHY
+        font-family: $spinnaker;
+        font-size:30px;
+
+        // POSITIONING
+        margin-top: 30px;
+        margin-left: calc(50% - 134px);
+        width: fit-content;
+    }
+    .forgotPassword{
+        // TYPOGRAPHY
+        font-family: $varelaRound;
+        font-size:12px;
+
+        // DESIGN
+        color: $white;
+        cursor: pointer;
+        opacity: 0.8;
+        
+        // POSITIONING
+        margin-left: calc(50% - 50.75px);
+        width: fit-content;
+    }
+
+}

@@ -1,0 +1,152 @@
+.mainContainer{
+    // POSITIONING
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 487.68px 731.51px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 100px;
+
+    .mainContainerPost{
+    // POSITIONING
+      height: auto;
+      padding: 20px;
+    // DESIGN
+      border-radius: 10px;
+      background: none;
+      transition: 0.3s ease-out;
+      .intro{
+        // TYPOGRAPHY
+        font-family: 'Spinnaker';
+        font-size: 16px;
+        a{
+        // DESIGN 
+          color: #565656;
+        }
+      }
+      .title{
+        // POSITIONING
+        margin-top: 20px;
+
+        // TYPOGRAPHY
+        font-family: 'Varela Round';
+        font-size: 50px;  
+      }
+      .paragraph{
+        // POSITIONING
+        margin-top: 20px;
+
+        // TYPOGRAPHY
+        font-family: 'Varela Round';
+        font-size: 26px;
+
+        // DESIGN
+        color: #565656;
+      }
+      .learnMore{
+        // POSITIONING
+        padding-top: 20px;
+
+        // TYPOGRAPHY
+        font-family: 'Spinnaker';
+        font-size: 16px;
+
+        // DESIGN
+        color: #565656;
+        transition: 0.2s ease-out;
+        cursor: pointer;
+        &:hover{
+
+          // TYPOGRAPHY
+          font-size: 18px;
+
+          // DESIGN
+          color: $darkOrange;
+        }
+      }
+      &:hover{
+        // DESIGN
+        box-shadow: $boxShadow;
+      }
+    }
+    .mainContainerImage{
+  
+        img{
+          // POSITIONING
+          height: 400px;
+          width: 100%;
+          z-index: 0;
+
+          // DESIGN
+          border-radius: 10px;
+          cursor: pointer;
+          transition: 0.3s ease-out;
+          &:hover{
+            // DESIGN
+            opacity: 0.8;
+            box-shadow: $boxShadow;
+          }
+        }
+  
+      #learnMorePopUpOne{
+          // DESIGN
+          background-color: $darkOrange;
+      }
+      #learnMorePopUpTwo{
+          // DESIGN
+          background-color: #E6AF2E;
+      }
+      #learnMorePopUpThree{
+          // DESIGN
+          background-color: #584CBD;
+      }
+      .learnMorePopUp{
+        // POSITIONING
+        position: absolute;
+        width: 731.5px;
+        height: 400px;
+        display: grid;
+        grid-template-rows: auto auto;
+        z-index: 1;
+
+        // DESIGN
+        border-radius: 10px;
+        box-shadow: $boxShadow;
+        .learnMorePopUpText{
+          // POSITIONING
+          width: fit-content;
+          padding: 20px;
+
+          // TYPOGRAPHY
+          font-family: 'Varela Round';
+          font-size: 16px;
+          text-align: justify;
+
+          // DESIGN
+          color: $white;
+        }
+        .learnMorePopUpImages{
+          // POSITIONING
+          display: grid;
+          grid-template-columns: auto auto auto;
+          .learnMorePopUpImage{
+            // POSITIONING
+            padding-left: 20px;
+            .image{
+              // POSITIONING
+              width: 200px;
+              height: 120px;
+
+              // DESIGN
+              opacity: 1;
+              &:hover{
+                // POSITIONING
+                width: 210px;
+                height: 130px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
